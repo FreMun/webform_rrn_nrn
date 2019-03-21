@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains webform_rrn_nrn.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function webform_rrn_nrn_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the webform_rrn_nrn module.
+    case 'help.page.webform_rrn_nrn':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides webform fieldtype for the Belgian National Insurance Number (rijksregisternummer/numéro de registre national)') . '</p>';
+      return $output;
+
+    default:
+  }
+}
