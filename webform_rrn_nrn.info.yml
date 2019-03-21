@@ -5,3 +5,5 @@ core: 8.x
 package: 'Custom'
 dependencies:
   - webform
+'interface translation project': webform_rrn_nrn
+'interface translation server pattern': 'modules/custom/webform_rrn_nrn/translations/%language.po'
