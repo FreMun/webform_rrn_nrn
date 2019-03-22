@@ -7,7 +7,7 @@ use Drupal\webform\Plugin\WebformElementBase;
 
 /**
  * Provides a 'webform_belgian_national_insurance_number'.
- * 
+ *
  * @WebformElement(
  *   id = "webform_belgian_national_insurance_number",
  *   label = @Translation("Belgian National Insurance Number"),
@@ -47,7 +47,7 @@ class WebformBelgianNationalInsuranceNumber extends WebformElementBase {
     $form['rrn_nrn']['error_message'] = [
       '#type' => 'textfield',
       '#title' => t('Error message'),
-      '#description' => t('This message will be shown when the user fills in an incorrect Belgian National Insurance Number.'),
+      '#description' => t('This message will be shown when the user fills in an invalid Belgian National Insurance Number.'),
       '#required' => TRUE,
     ];
     return $form;
